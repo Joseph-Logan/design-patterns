@@ -5,7 +5,6 @@ type StorageTransactionResponse = {
 interface StorageTransactionMethods {
   storeTransaction: () => StorageTransactionResponse
 }
-
 export class StorageTransactionSubsystem implements StorageTransactionMethods {
   storeTransaction = (): StorageTransactionResponse => {
     return {
